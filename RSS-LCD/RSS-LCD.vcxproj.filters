@@ -14,4 +14,59 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Titulares.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Noticia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="genericFSM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Handlers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Titulares.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Noticia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genericFSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genericEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genericState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="States.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Handlers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
