@@ -9,7 +9,6 @@ class State
 {
 public:
 	State();
-
 	genericEvent * eventGenerator(const char *name, inputTypes type);
 	genericEvent * ev;
 	genericFSM FSM;
