@@ -8,7 +8,7 @@ State::State()
 
 genericEvent* State::eventGenerator(const char *name, inputTypes types)
 {
-	genericEvent *ret;
+	genericEvent *ret = nullptr;
 	switch (types)
 	{
 	case START:
@@ -24,13 +24,13 @@ genericEvent* State::eventGenerator(const char *name, inputTypes types)
 		{
 			ret = new EV_ItemStartTag;
 		}
-		else if (strcmp(name, "date") == 0)
+		else if (strcmp(name, "pubDate") == 0)
 		{
 			ret = new EV_DateStartTag;
 		}
 		else
 		{
-			ret = new EV_OtherStartTag;
+			ret = new EV_NoEv;
 		}
 		break;
 	case END:
@@ -46,20 +46,19 @@ genericEvent* State::eventGenerator(const char *name, inputTypes types)
 		{
 			ret = new EV_ItemEndTag;
 		}
-		else if (strcmp(name, "date") == 0)
+		else if (strcmp(name, "pubDate") == 0)
 		{
 			ret = new EV_DateEndTag;
 		}
 		else
 		{
-			ret = new EV_OtherEndTag;
+			ret = new EV_NoEv;
 		}
-		break;
-	case DATA:
 		break;
 	default:
 		break;
 	}
+	return ret;
 }
 
 

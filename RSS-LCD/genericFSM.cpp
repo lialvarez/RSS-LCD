@@ -37,9 +37,6 @@ void genericFSM::dispatch(genericEvent *ev, void * data)
 		case DATE_TAG_S:
 			newState = currentState->onDateStartTag(ev);
 			break;
-		case OTHER_TAG_S:
-			newState = currentState->onOtherStartTag(ev);
-			break;
 		case CH_TAG_E:
 			newState = currentState->onChannelEndTag(ev);
 			break;
@@ -52,9 +49,6 @@ void genericFSM::dispatch(genericEvent *ev, void * data)
 		case DATE_TAG_E:
 			newState = currentState->onDateEndTag(ev);
 			break;
-		case OTHER_TAG_E:
-			newState = currentState->onOtherEndTag(ev);
-			break;
 		default:
 			break;
 		}
@@ -65,4 +59,3 @@ void genericFSM::dispatch(genericEvent *ev, void * data)
 		}
 	}
 }
-

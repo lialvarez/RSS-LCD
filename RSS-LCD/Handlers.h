@@ -1,10 +1,14 @@
-#ifndef HANDLERS_H
-#define HANDLERS_H
-
-#include "expat.h"
-
-XML_StartElementHandler startCallback;
-XML_EndElementHandler endCallback;
-XML_CharacterDataHandler dataCallback;
-
-#endif // !HANDLERS_H
+//#ifndef HANDLERS_H
+//#define HANDLERS_H
+//#include <expat.h>
+//
+//static void XMLCALL
+//startElementHandler(void *userData, const XML_Char *name, const char **atts);
+//
+//static void XMLCALL
+//endElementHandler(void *userData, const XML_Char *name);
+//
+//static void XMLCALL
+//characterDataHandler(void *userData, const XML_Char *s, int len);
+//
+//#endif // !HANDLERS_H

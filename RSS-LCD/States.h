@@ -16,8 +16,8 @@ private:
 class ST_Channel : public genericState
 {
 public:
+
 	genericState * onTitleStartTag(genericEvent* ev);
-	genericState * onOtherStartTag(genericEvent* ev);
 	genericState * onItemStartTag(genericEvent* ev);
 	genericState * onChannelEndTag(genericEvent* ev);
 
@@ -29,15 +29,6 @@ class ST_ChannelTitle : public genericState
 {
 public:
 	genericState * onTitleEndTag(genericEvent* ev);
-private:
-
-};
-
-class ST_Ignore : public genericState
-{
-public:
-	genericState * onOtherEndTag(genericEvent* ev);
-
 private:
 
 };

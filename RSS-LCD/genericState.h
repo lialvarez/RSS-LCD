@@ -14,17 +14,14 @@ public:
 	virtual genericState * onTitleStartTag(genericEvent* ev) { return nullptr; }
 	virtual genericState * onItemStartTag(genericEvent* ev) { return nullptr; }
 	virtual genericState * onDateStartTag(genericEvent* ev) { return nullptr; }
-	virtual genericState * onOtherStartTag(genericEvent* ev) { return nullptr; }
 	virtual genericState * onChannelEndTag(genericEvent* ev) { return nullptr; }
 	virtual genericState * onTitleEndTag(genericEvent* ev) { return nullptr; }
 	virtual genericState * onItemEndTag(genericEvent* ev, void* data) { return nullptr; }
 	virtual genericState * onDateEndTag(genericEvent* ev) { return nullptr; }
-	virtual genericState * onOtherEndTag(genericEvent* ev) { return nullptr; }
 
-	stateCode_t getCurrentStateCode() { return currentStateCode; }
-
-protected:
 	stateCode_t currentStateCode;
+protected:
+
 };
 
 #endif // !GENERICSTATE_H
